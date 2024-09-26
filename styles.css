@@ -5,24 +5,37 @@
     box-sizing: border-box;
 }
 
-/* 全局樣式 */
+/* 基本全局樣式 */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #b3d1ff; /* 設定淡藍色背景 */
     margin: 0;
     padding: 0;
+    background: #b3d1ff; /* 淡藍色背景 */
     color: #333;
 }
 
-/* 內容區塊樣式 */
 .main-content {
-    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，50%透明度 */
-    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色半透明背景 */
+    margin: 10px auto;
     padding: 20px;
-    width: 80%; /* 內縮設定為網頁寬度的90% */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* 可選，添加陰影以增強層次感 */
+    width: 90%; /* 預設寬度 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+/* 媒體查詢 */
+@media (min-width: 768px) { /* 針對平板和桌面顯示設置 */
+    .main-content {
+        width: 80%; /* 較寬的屏幕使用更窄的寬度 */
+    }
+}
+
+@media (min-width: 1024px) { /* 針對桌面顯示設置 */
+    .main-content {
+        width: 70%; /* 桌面顯示器使用更窄的寬度 */
+    }
+}
+
 
 /* 其他元素和區塊保持原樣或根據需要調整 */
 
