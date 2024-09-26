@@ -14,6 +14,38 @@ body {
     background: #b3d1ff; /* 淡藍色背景 */
     color: #333;
 }
+.portfolio-item {
+    width: 100%; /* 確保占滿可用寬度 */
+    overflow: hidden; /* 隱藏溢出的部分 */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中心對齊內部元素 */
+}
+
+audio {
+    width: 100%; /* 確保音頻控件不超過容器寬度 */
+    max-width: 600px; /* 防止在大屏幕上過寬 */
+}
+.portfolio-item h3 {
+    margin-bottom: 10px; /* 為標題和播放器之間添加間隔 */
+}
+
+audio {
+    margin-bottom: 20px; /* 為播放器和下一個元素添加間隔 */
+}
+
+@media (max-width: 768px) {
+    audio {
+        width: 95%; /* 小屏幕上留有邊距 */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    audio {
+        width: 90%; /* 中等屏幕適當調整 */
+    }
+}
 
 .main-content {
     background-color: rgba(255, 255, 255, 0.5); /* 白色半透明背景 */
