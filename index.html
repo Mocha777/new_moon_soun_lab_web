@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新月聲音實驗室</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div class="main-content">
+    <body>
+        <!-- 導覽列 -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">工作室介紹</a></li>
+                    <li><a href="#team">成員介紹</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#contact">聯絡方法</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- 首頁介紹 -->
+        <section id="hero">
+            <h1>新月聲音實驗室</h1>
+            <p>專注於製作女性向音聲作品與廣播劇</p>
+        </section>
+    
+        <!-- 工作室介紹 -->
+        <section id="about">
+            <h2>關於我們</h2>
+            <p>新月聲音實驗室成立於 XXXX 年，致力於創造豐富多彩的聲音作品。我們的使命是通過高品質的音聲與廣播劇作品，為女性聽眾帶來沉浸式的聽覺體驗。</p>
+        </section>
+    
+        <!-- 成員介紹 -->
+        <section id="team">
+            <h2>成員介紹</h2>
+            <div class="team-member">
+                <img src="member1.jpg" alt="成員1">
+                <h3>林小美</h3>
+                <p>配音演員，擅長溫柔、堅毅的角色配音。</p>
+            </div>
+            <div class="team-member">
+                <img src="member2.jpg" alt="成員2">
+                <h3>陳美華</h3>
+                <p>廣播劇導演，專注於女性向題材的創作與導演。</p>
+            </div>
+        </section>
+    
+        <!-- 作品集 -->
+        <section id="portfolio">
+            <h2>作品集</h2>
+            <div class="portfolio-item">
+                <h3>作品名稱 1</h3>
+                <audio controls>
+                    <source src="sample1.mp3" type="audio/mp3">
+                    您的瀏覽器不支援音頻播放。
+                </audio>
+            </div>
+            <div class="portfolio-item">
+                <h3>作品名稱 2</h3>
+                <audio controls>
+                    <source src="sample2.mp3" type="audio/mp3">
+                    您的瀏覽器不支援音頻播放。
+                </audio>
+            </div>
+        </section>
+    
+        <!-- 聯絡方法 -->
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <form>
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">訊息</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">送出</button>
+            </form>
+        </section>
+    
+        <footer>
+            <p>© 2024 新月聲音實驗室. All rights reserved.</p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</div>
+
+</html>

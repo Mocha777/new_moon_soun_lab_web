@@ -1,0 +1,140 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局樣式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #b3d1ff; /* 設定淡藍色背景 */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 內容區塊樣式 */
+.main-content {
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，50%透明度 */
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%; /* 內縮設定為網頁寬度的90% */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* 可選，添加陰影以增強層次感 */
+}
+
+/* 其他元素和區塊保持原樣或根據需要調整 */
+
+/* 導覽列 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* 首頁部分 */
+#hero {
+    background: url('picture/background.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+#hero h1 {
+    font-size: 48px;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+/* 工作室介紹 */
+section {
+    padding: 20px;
+}
+
+#about, #team, #portfolio, #contact {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 成員介紹 */
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* 作品集 */
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+/* 聯絡表單 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* 頁腳 */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
