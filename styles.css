@@ -106,13 +106,38 @@ nav ul li a {
 }
 
 
+/* 基本樣式 */
 #hero h1 {
-    font-size: 48px;
+    font-size: 36px; /* 預設字體大小 */
+    margin-bottom: 10px;
 }
 
 #hero p {
-    font-size: 20px;
+    font-size: 18px; /* 預設字體大小 */
 }
+
+/* 手機設備 */
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 24px; /* 較小的屏幕上減小字體大小 */
+    }
+
+    #hero p {
+        font-size: 14px; /* 較小的屏幕上減小字體大小 */
+    }
+}
+
+/* 平板設備 */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #hero h1 {
+        font-size: 30px; /* 中等尺寸屏幕的字體大小 */
+    }
+
+    #hero p {
+        font-size: 16px; /* 中等尺寸屏幕的字體大小 */
+    }
+}
+
 
 /* 工作室介紹 */
 section {
